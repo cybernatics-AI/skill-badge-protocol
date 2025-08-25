@@ -28,40 +28,6 @@ The Skill Badge Protocol transforms how professional skills are verified and sho
 - **Governance System**: Decentralized decision-making for protocol evolution
 - **Interoperability**: Compatible with existing Stacks ecosystem tools
 
-##  Installation
-
-### Prerequisites
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- [Clarinet](https://github.com/hirosystems/clarinet)
-- [Git](https://git-scm.com/)
-
-### Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/skill-badge-protocol.git
-   cd skill-badge-protocol
-   ```
-
-2. **Install Clarinet**
-   ```bash
-   # Using cargo
-   cargo install clarinet
-
-   # Or using brew (macOS)
-   brew install clarinet
-   ```
-
-3. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-4. **Initialize the project**
-   ```bash
-   clarinet integrate
-   ```
-
 ##  Usage Examples
 
 ### Minting a Skill Badge
@@ -146,64 +112,6 @@ The Skill Badge Protocol transforms how professional skills are verified and sho
   - `verify-credentials`: Verify user credentials for employers
   - `search-skills`: Search users by skill categories
 
-### Contract Architecture
-
-```
-        
-   Governance          Reputation             Marketplace   
-                       System                               
-        
-                                                       
-          
-                              
-          
-                     Skill Badge NFT             
-                   (Core Contract)               
-          
-                              
-          
-                  Endorsement System             
-                (Staking & Rewards)              
-          
-```
-
-##  Testing
-
-### Run Unit Tests
-
-```bash
-# Run all tests
-clarinet test
-
-# Run specific test file
-clarinet test tests/skill-badge-nft_test.ts
-
-# Run with coverage
-clarinet test --coverage
-```
-
-### Test Scenarios
-
-The test suite covers:
-- Badge minting and metadata validation
-- Staking and slashing mechanics
-- Reputation score calculations
-- Governance proposal lifecycle
-- Marketplace functionality
-- Error handling and edge cases
-
-### Integration Testing
-
-```bash
-# Start local devnet
-clarinet integrate
-
-# Deploy contracts to testnet
-clarinet deploy --testnet
-
-# Run integration tests
-npm run test:integration
-```
 
 ##  Contributing
 
@@ -240,5 +148,3 @@ We welcome contributions from the community! Here's how to get started:
 3. Ensure CI checks pass
 4. Request review from maintainers
 5. Address feedback and re-request review
-
-## 
